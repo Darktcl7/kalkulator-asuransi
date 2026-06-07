@@ -58,11 +58,8 @@ const ContactPromo = () => {
 
           {/* Contact Section */}
           <div className="bg-gray-800 p-8 md:p-12 md:w-1/3 flex flex-col justify-center items-center text-center border-t md:border-t-0 md:border-l border-gray-700">
-            <div className="w-32 h-32 rounded-full border-4 border-pru-maroon p-1 mb-6 bg-white overflow-hidden">
-              {/* Fallback avatar since we don't have the image file */}
-              <div className="w-full h-full bg-gray-200 rounded-full flex items-center justify-center">
-                <span className="text-gray-500 text-3xl font-black">AP</span>
-              </div>
+            <div className="w-32 h-32 rounded-full mb-6 overflow-hidden bg-gray-800 flex items-center justify-center">
+              <img src="/foto.png" alt="Amalia PRU" className="w-full h-full object-cover scale-[1.02]" />
             </div>
             <h3 className="text-2xl font-black text-white mb-1">Amalia PRU</h3>
             <p className="text-gray-400 text-sm mb-6">Financial Advisor Prudential</p>
