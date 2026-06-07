@@ -183,7 +183,7 @@ const PensiunCalculatorV2 = () => {
                   {formatRp(results.totalNeeded)}
                 </h2>
                 <div className="inline-block bg-black/20 backdrop-blur-sm px-6 py-2 rounded-full border border-white/10">
-                  <p className="text-xs md:text-sm font-medium">Persiapan: {results.yearsUntilRetirement} Tahun | Ekspektasi Hidup: Usia 75</p>
+                  <p className="text-xs md:text-sm font-medium">Persiapan: {results.yearsUntilRetirement} Tahun | Ekspektasi Hidup: Usia 55-75</p>
                 </div>
               </div>
             </div>
