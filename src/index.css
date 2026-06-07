@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pru-maroon: #ED1B2E;
-  --color-pru-maroon-dark: #B20000;
+  --color-pru-maroon: #800000;
+  --color-pru-maroon-dark: #4d0000;
   --font-sans: "Inter", system-ui, sans-serif;
 }
 
