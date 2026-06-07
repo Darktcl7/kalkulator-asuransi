@@ -44,7 +44,7 @@ function App() {
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <button 
                     onClick={() => setCurrentTab('pensiun')}
-                    className="bg-gray-900 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-gray-800 transition-all hover:-translate-y-1"
+                    className="bg-pru-maroon text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-pru-maroon-dark transition-all hover:-translate-y-1"
                   >
                     Kalkulator Pensiun
                   </button>
