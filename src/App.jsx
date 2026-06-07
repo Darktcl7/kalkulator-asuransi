@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import PensiunCalculatorV2 from './components/PensiunCalculatorV2';
 import PendidikanCalculatorV2 from './components/PendidikanCalculatorV2';
 import ContactPromo from './components/ContactPromo';
 
 function App() {
-  const [currentTab, setCurrentTab] = useState('home');
+  const getTabFromHash = () => {
+    const hash = window.location.hash.replace('#', '');
+    return ['home', 'pensiun', 'pendidikan'].includes(hash) ? hash : 'home';
+  };
+
+  const [currentTab, setCurrentTabState] = useState(getTabFromHash());
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentTabState(getTabFromHash());
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const setCurrentTab = (tab) => {
+    window.location.hash = tab;
+  };
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-gray-50">
