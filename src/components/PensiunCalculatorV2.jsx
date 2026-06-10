@@ -118,23 +118,7 @@ const PensiunCalculatorV2 = () => {
         {/* Input Card - Vertical Stack */}
         <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-10 border border-gray-100">
           
-          <div className="mb-8 pb-8 border-b border-gray-100">
-            <p className="text-sm font-bold text-gray-500 mb-4 text-center">MODE PENGGUNA</p>
-            <div className="flex bg-gray-100 rounded-full p-1 max-w-sm mx-auto">
-              <button 
-                onClick={() => setIsAgent('no')}
-                className={`flex-1 py-2.5 px-4 rounded-full text-sm font-bold transition-all ${isAgent === 'no' ? 'bg-white text-black shadow-sm' : 'text-gray-500 hover:text-black'}`}
-              >
-                Customer Baru
-              </button>
-              <button 
-                onClick={() => setIsAgent('yes')}
-                className={`flex-1 py-2.5 px-4 rounded-full text-sm font-bold transition-all ${isAgent === 'yes' ? 'bg-black text-white shadow-sm' : 'text-gray-500 hover:text-black'}`}
-              >
-                Agen PRU
-              </button>
-            </div>
-          </div>
+
 
           <div className="space-y-8">
             <div className="group">

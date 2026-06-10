@@ -13,9 +13,14 @@ const Navbar = ({ setCurrentTab }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => handleNav('home')}>
-            <span className="text-2xl font-black text-pru-maroon tracking-tight">PRU</span>
-            <span className="text-2xl font-bold text-gray-800 tracking-tight">Mapan</span>
+          <div className="flex-shrink-0 flex items-center cursor-pointer gap-2" onClick={() => handleNav('home')}>
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-pru-maroon bg-white shadow-sm flex-shrink-0">
+              <img src="/foto.png" alt="Amalia PRU" className="w-full h-full object-cover scale-[1.02]" />
+            </div>
+            <div className="flex items-center">
+              <span className="text-xl md:text-2xl font-bold text-gray-800 tracking-tight">Amalia </span>
+              <span className="text-xl md:text-2xl font-black text-pru-maroon tracking-tight ml-1">PRU</span>
+            </div>
           </div>
 
           {/* Desktop Menu */}

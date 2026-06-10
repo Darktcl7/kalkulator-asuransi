@@ -9,34 +9,49 @@ const ContactPromo = () => {
           {/* Promo Section */}
           <div className="p-8 md:p-12 md:w-2/3">
             <span className="text-pru-maroon font-black uppercase tracking-wider text-sm mb-2 block">Asuransi Jiwa PRUMapan</span>
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">
               Tabungan Dana Pensiun & Pendidikan Terjamin
             </h2>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="bg-gray-800 p-4 rounded-2xl flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-green-500 font-bold text-xl">✓</span>
-                </div>
-                <p className="text-gray-300 text-sm font-medium">Premi terjangkau mulai 200 ribu</p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+              {/* Asuransi Pensiun */}
+              <div className="bg-gray-800 p-5 rounded-2xl border border-gray-700 shadow-inner">
+                <h3 className="text-lg font-bold text-red-400 mb-4 uppercase tracking-wider text-sm">Asuransi Pensiun</h3>
+                <ul className="space-y-3">
+                  {[
+                    "Premi terjangkau mulai 200 ribu",
+                    "Usia masuk 19-45 tahun",
+                    "Dana cair berkala di usia 55-75 tahun",
+                    "Return tinggi hingga 5,8x dari premi",
+                    "Tambahan Manfaat Meninggal Dunia",
+                    "Pilihan pembayaran berkala / lumpsum"
+                  ].map((text, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-green-400 font-bold mt-0.5">✓</span>
+                      <span className="text-gray-300 text-sm">{text}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="bg-gray-800 p-4 rounded-2xl flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-500 font-bold text-xl">✓</span>
-                </div>
-                <p className="text-gray-300 text-sm font-medium">Usia masuk 19-45 tahun</p>
-              </div>
-              <div className="bg-gray-800 p-4 rounded-2xl flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-yellow-500 font-bold text-xl">✓</span>
-                </div>
-                <p className="text-gray-300 text-sm font-medium">Dana cair berkala di usia 55-75 tahun</p>
-              </div>
-              <div className="bg-gray-800 p-4 rounded-2xl flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-purple-500 font-bold text-xl">✓</span>
-                </div>
-                <p className="text-gray-300 text-sm font-medium">Return tinggi hingga 5,8x dari premi</p>
+
+              {/* Dana Pendidikan */}
+              <div className="bg-gray-800 p-5 rounded-2xl border border-gray-700 shadow-inner">
+                <h3 className="text-lg font-bold text-red-400 mb-4 uppercase tracking-wider text-sm">Dana Pendidikan</h3>
+                <ul className="space-y-3">
+                  {[
+                    "Premi terjangkau mulai 200 ribu",
+                    "Dana cair berkala di tahun mulai tahun ke-4 hingga tahun ke-18",
+                    "Bisa dipakai untuk perencanaan pendidikan TK, SD, SMP, SMA Kuliah",
+                    "200% Santunan Asuransi Cacat Total & Tetap atau Meninggal Dunia",
+                    "Tambahan 200% Santunan Asuransi Meninggal Dunia akibat Kecelakaan",
+                    "Manfaat Bebas Kontribusi jika terkena resiko Meninggal dunia; Cacat Total & Tetap; Kondisi Kritis Tahap Akhir"
+                  ].map((text, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-green-400 font-bold mt-0.5">✓</span>
+                      <span className="text-gray-300 text-sm leading-snug">{text}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
