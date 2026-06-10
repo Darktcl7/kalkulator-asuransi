@@ -38,7 +38,7 @@ function App() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[85vh] relative">
                   {/* Left Column: Content */}
                   <div className="flex flex-col justify-center pt-6 pb-16 lg:py-24 lg:pr-12 animate-in slide-in-from-left duration-700">
-                    <h1 className="text-5xl lg:text-7xl font-black text-gray-900 mb-8 tracking-tight leading-[1.1] text-center lg:text-left">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 mb-8 tracking-tight leading-[1.1] text-center lg:text-left">
                       Financial <span className="text-transparent bg-clip-text bg-gradient-to-r from-pru-maroon to-red-600">Protection</span><br/>
                       with Heart.
                     </h1>
