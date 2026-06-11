@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactPromo = () => {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6">
+    <div className="bg-white py-6 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="bg-gray-900 rounded-[2rem] p-8 md:p-12 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl border border-gray-800">
           
