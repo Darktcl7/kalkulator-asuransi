@@ -266,7 +266,6 @@ const PendidikanCalculatorV2 = () => {
 
       <div className="mt-12 max-w-2xl mx-auto bg-gray-800 p-6 md:p-8 rounded-3xl border border-gray-700 shadow-2xl text-left">
         <div className="text-center mb-6">
-          <span className="inline-block py-1 px-3 rounded-full bg-pru-maroon/20 text-red-400 text-xs font-bold tracking-widest uppercase mb-3 border border-pru-maroon/30">Program Unggulan</span>
           <h3 className="text-2xl md:text-3xl font-black text-white leading-tight">
             Asuransi <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">Pendidikan Terjamin</span>
           </h3>
