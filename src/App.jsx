@@ -104,14 +104,12 @@ function App() {
         {currentTab === 'pensiun' && (
           <div className="animate-in fade-in duration-500">
             <PensiunCalculatorV2 />
-            <ContactPromo />
           </div>
         )}
 
         {currentTab === 'pendidikan' && (
           <div className="animate-in fade-in duration-500">
             <PendidikanCalculatorV2 />
-            <ContactPromo />
           </div>
         )}
       </main>

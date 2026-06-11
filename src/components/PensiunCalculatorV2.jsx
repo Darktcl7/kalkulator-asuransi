@@ -107,10 +107,10 @@ const PensiunCalculatorV2 = () => {
       
       {/* Centered Minimalist Header */}
       <div className="text-center mb-12">
-        <span className="text-pru-maroon font-bold tracking-widest uppercase text-xs mb-2 block">Pensiun Plan</span>
-        <h1 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">Kalkulator Pensiun</h1>
+        <span className="text-pru-maroon font-bold tracking-widest uppercase text-xs mb-2 block">Kalkulator</span>
+        <h1 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">Dana Pensiun</h1>
         <div className="w-16 h-1 bg-pru-maroon mx-auto mb-6"></div>
-        <p className="text-gray-600">Hitung angka kemerdekaan finansialmu di masa tua.</p>
+        <p className="text-gray-600 mb-8">Hitung angka kemerdekaan finansialmu di masa tua.</p>
       </div>
 
       <div className="space-y-8">
@@ -268,6 +268,25 @@ const PensiunCalculatorV2 = () => {
             )}
           </div>
         )}
+      </div>
+
+      <div className="mt-12 max-w-2xl mx-auto bg-gray-800 p-6 md:p-8 rounded-3xl border border-gray-700 shadow-2xl text-left">
+        <h3 className="text-2xl md:text-3xl font-black text-white mb-6 text-center">Asuransi Dana Pensiun</h3>
+        <ul className="space-y-4">
+          {[
+            "Premi terjangkau mulai 200 ribu",
+            "Usia masuk 19-45 tahun",
+            "Dana cair berkala di usia 55-75 tahun",
+            "Return tinggi hingga 5,8x dari premi",
+            "Tambahan Manfaat Meninggal Dunia",
+            "Pilihan pembayaran berkala / lumpsum"
+          ].map((text, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="text-green-400 font-bold mt-0.5">✓</span>
+              <span className="text-gray-300 text-sm md:text-base leading-snug">{text}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

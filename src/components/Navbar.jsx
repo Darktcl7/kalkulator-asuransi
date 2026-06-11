@@ -35,13 +35,13 @@ const Navbar = ({ setCurrentTab }) => {
               onClick={() => handleNav('pensiun')}
               className="text-sm font-medium text-gray-600 hover:text-pru-maroon transition-colors"
             >
-              Dana Pensiun
+              Kalkulator Dana Pensiun
             </button>
             <button 
               onClick={() => handleNav('pendidikan')}
               className="text-sm font-medium text-gray-600 hover:text-pru-maroon transition-colors"
             >
-              Dana Pendidikan
+              Kalkulator Dana Pendidikan
             </button>
             <a 
               href="https://wa.me/6282230655518" 
@@ -93,13 +93,13 @@ const Navbar = ({ setCurrentTab }) => {
               onClick={() => handleNav('pensiun')}
               className="block w-full text-left px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:bg-gray-50 hover:text-pru-maroon"
             >
-              Kalkulator Pensiun
+              Kalkulator Dana Pensiun
             </button>
             <button 
               onClick={() => handleNav('pendidikan')}
               className="block w-full text-left px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:bg-gray-50 hover:text-pru-maroon"
             >
-              Kalkulator Pendidikan
+              Kalkulator Dana Pendidikan
             </button>
           </div>
         </div>
