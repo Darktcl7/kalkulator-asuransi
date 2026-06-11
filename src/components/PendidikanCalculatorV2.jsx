@@ -264,7 +264,7 @@ const PendidikanCalculatorV2 = () => {
         )}
       </div>
 
-      <div className="mt-12 max-w-2xl mx-auto bg-gray-800 p-6 md:p-8 rounded-3xl border border-gray-700 shadow-2xl text-left">
+      <div className="mt-12 w-full bg-gray-800 p-6 md:p-8 rounded-3xl border border-gray-700 shadow-2xl text-left">
         <div className="text-center mb-6">
           <h3 className="text-2xl md:text-3xl font-black text-white leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">Asuransi</span> Pendidikan Terjamin
